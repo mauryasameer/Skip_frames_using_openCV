@@ -1,6 +1,6 @@
 import os
 import cv2
-dir='caption'
+dir='caption'#The name of the directory in which the frames of your video will be stored
 
 try:
 	os.mkdir(dir)
@@ -8,7 +8,7 @@ try:
 except FileExistsError:
 	print('already created')
 
-vid = cv2.VideoCapture('test.mp4')
+vid = cv2.VideoCapture('')#give the absolute path of the file in which your video is present
 
 c=0
 i=0
